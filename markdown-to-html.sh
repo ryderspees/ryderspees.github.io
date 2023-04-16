@@ -22,7 +22,7 @@ echo "<html>
       <ul>" > temp.html
 
 for FILE in blog/*.html; do
-  if $FILE == blog/index.html; then
+  if [[ "$FILE" == "blog/index.html" ]]; then
     continue
   fi
   echo "<li><a href= $(basename "$FILE")>" >> temp.html
