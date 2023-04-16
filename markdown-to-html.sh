@@ -10,7 +10,6 @@ for FILE in source/*.md; do
   pandoc "$FILE" -o "$OUTPUT_FILE"
 done
 
-
 # Wrap the index file with HTML structure
 echo "<html>
 <head>
